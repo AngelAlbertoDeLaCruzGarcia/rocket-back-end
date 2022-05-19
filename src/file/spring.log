@@ -1,0 +1,632 @@
+2022-05-19 01:02:30.699  WARN 14440 --- [HikariPool-31 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-31 - Thread starvation or clock leap detected (housekeeper delta=5h15m17s250ms598µs801ns).
+2022-05-19 01:02:43.453  INFO 14440 --- [Thread-115] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 01:02:43.454  INFO 14440 --- [Thread-115] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-19 01:02:43.454 DEBUG 14440 --- [Thread-115] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 01:02:43.501 DEBUG 14440 --- [Thread-115] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 01:02:43.508  INFO 14440 --- [Thread-115] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Shutdown initiated...
+2022-05-19 01:02:43.516  INFO 14440 --- [Thread-115] com.zaxxer.hikari.HikariDataSource       : HikariPool-31 - Shutdown completed.
+2022-05-19 01:02:43.675  INFO 14440 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Starting BackEndApplication using Java 11.0.12 on DESKTOP-UOD0JJR with PID 14440 (C:\Users\angel\Desktop\BIM\Back-end\target\classes started by angel in C:\Users\angel\Desktop\BIM\Back-end)
+2022-05-19 01:02:43.676  INFO 14440 --- [restartedMain] c.b.s.apirest.BackEndApplication         : No active profile set, falling back to default profiles: default
+2022-05-19 01:02:44.174  INFO 14440 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-19 01:02:44.191  INFO 14440 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2022-05-19 01:02:44.424  INFO 14440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 90 (http)
+2022-05-19 01:02:44.427  INFO 14440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-19 01:02:44.428  INFO 14440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-05-19 01:02:44.461  INFO 14440 --- [restartedMain] o.a.c.c.C.[Tomcat-8].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2022-05-19 01:02:44.462  INFO 14440 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 782 ms
+2022-05-19 01:02:44.532  INFO 14440 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-19 01:02:44.540  INFO 14440 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Starting...
+2022-05-19 01:02:44.547  INFO 14440 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-32 - Start completed.
+2022-05-19 01:02:44.548  INFO 14440 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-19 01:02:44.603 DEBUG 14440 --- [restartedMain] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 01:02:44.605 DEBUG 14440 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 01:02:44.607 DEBUG 14440 --- [restartedMain] org.hibernate.SQL                        : create table chats (id integer not null auto_increment, create_at date, delete_at date, name varchar(60), update_at date, primary key (id)) engine=InnoDB
+2022-05-19 01:02:44.668 DEBUG 14440 --- [restartedMain] org.hibernate.SQL                        : create table users_angel_alberto (id integer not null auto_increment, birthday date not null, create_at datetime not null, delete_at datetime, email varchar(100) not null, first_lastname varchar(30) not null, first_name varchar(30) not null, second_lastname varchar(30) not null, second_name varchar(30), telefono varchar(15) not null, update_at datetime, primary key (id)) engine=InnoDB
+2022-05-19 01:02:44.700  INFO 14440 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'file:/C:/Users/angel/Desktop/BIM/Back-end/target/classes/import.sql'
+2022-05-19 01:02:44.701  INFO 14440 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-19 01:02:44.701  INFO 14440 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 01:02:44.819  WARN 14440 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 01:02:44.951  INFO 14440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-19 01:02:44.954  INFO 14440 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-19 01:02:44.964  INFO 14440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 90 (http) with context path ''
+2022-05-19 01:02:44.969  INFO 14440 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Started BackEndApplication in 1.335 seconds (JVM running for 49558.137)
+2022-05-19 01:02:44.971  INFO 14440 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-19 01:23:48.038  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Starting BackEndApplication using Java 11.0.12 on DESKTOP-UOD0JJR with PID 12192 (C:\Users\angel\Desktop\BIM\Back-end\target\classes started by angel in C:\Users\angel\Desktop\BIM\Back-end)
+2022-05-19 01:23:48.050  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : No active profile set, falling back to default profiles: default
+2022-05-19 01:23:48.329  INFO 12192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-19 01:23:48.329  INFO 12192 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-19 01:23:52.227  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-19 01:23:52.591  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 310 ms. Found 2 JPA repository interfaces.
+2022-05-19 01:23:54.343  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 90 (http)
+2022-05-19 01:23:54.369  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-19 01:23:54.370  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-05-19 01:23:54.556  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-19 01:23:54.557  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6227 ms
+2022-05-19 01:23:55.073  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-19 01:23:55.195  INFO 12192 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-05-19 01:23:55.493  INFO 12192 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-19 01:23:55.714  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-19 01:23:56.034  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-19 01:23:56.068  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-19 01:23:57.257 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 01:23:57.299 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 01:23:57.309 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table chats (id integer not null auto_increment, create_at date, delete_at date, name varchar(60), update_at date, primary key (id)) engine=InnoDB
+2022-05-19 01:23:57.333 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table users_angel_alberto (id integer not null auto_increment, birthday date not null, create_at datetime not null, delete_at datetime, email varchar(100) not null, first_lastname varchar(30) not null, first_name varchar(30) not null, second_lastname varchar(30) not null, second_name varchar(30), telefono varchar(15) not null, update_at datetime, primary key (id)) engine=InnoDB
+2022-05-19 01:23:57.358  INFO 12192 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'file:/C:/Users/angel/Desktop/BIM/Back-end/target/classes/import.sql'
+2022-05-19 01:23:57.361  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-19 01:23:57.374  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 01:23:58.139  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 01:23:58.852  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-19 01:23:58.870  INFO 12192 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-19 01:23:58.944  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 90 (http) with context path ''
+2022-05-19 01:23:58.969  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Started BackEndApplication in 11.85 seconds (JVM running for 13.476)
+2022-05-19 01:24:13.727  INFO 12192 --- [http-nio-90-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 01:24:13.728  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-19 01:24:13.731  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-19 01:26:10.844  INFO 12192 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 01:26:10.845  INFO 12192 --- [Thread-5] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-19 01:26:10.847 DEBUG 12192 --- [Thread-5] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 01:26:10.897 DEBUG 12192 --- [Thread-5] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 01:26:10.922  INFO 12192 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-19 01:26:10.972  INFO 12192 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-19 01:26:11.305  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Starting BackEndApplication using Java 11.0.12 on DESKTOP-UOD0JJR with PID 12192 (C:\Users\angel\Desktop\BIM\Back-end\target\classes started by angel in C:\Users\angel\Desktop\BIM\Back-end)
+2022-05-19 01:26:11.306  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : No active profile set, falling back to default profiles: default
+2022-05-19 01:26:12.371  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-19 01:26:12.417  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2022-05-19 01:26:12.802  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 90 (http)
+2022-05-19 01:26:12.804  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-19 01:26:12.804  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-05-19 01:26:12.880  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-19 01:26:12.881  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1567 ms
+2022-05-19 01:26:13.086  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-19 01:26:13.107  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-05-19 01:26:13.117  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-05-19 01:26:13.117  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-19 01:26:13.322 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 01:26:13.357 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 01:26:13.364 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table chats (id integer not null auto_increment, create_at date, delete_at date, name varchar(60), update_at date, primary key (id)) engine=InnoDB
+2022-05-19 01:26:13.414 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table users_angel_alberto (id integer not null auto_increment, birthday date not null, create_at datetime not null, delete_at datetime, email varchar(100) not null, first_lastname varchar(30) not null, first_name varchar(30) not null, second_lastname varchar(30) not null, second_name varchar(30), telefono varchar(15) not null, update_at datetime, primary key (id)) engine=InnoDB
+2022-05-19 01:26:13.491  INFO 12192 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'file:/C:/Users/angel/Desktop/BIM/Back-end/target/classes/import.sql'
+2022-05-19 01:26:13.492  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-19 01:26:13.493  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 01:26:13.735  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 01:26:14.058  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-19 01:26:14.070  INFO 12192 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-19 01:26:14.100  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 90 (http) with context path ''
+2022-05-19 01:26:14.125  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Started BackEndApplication in 3.027 seconds (JVM running for 148.632)
+2022-05-19 01:26:14.132  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-19 01:26:17.046  INFO 12192 --- [http-nio-90-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 01:26:17.047  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-19 01:26:17.050  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-05-19 01:26:17.066  WARN 12192 --- [http-nio-90-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser); nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: (PushbackInputStream); line: 6, column: 6]]
+2022-05-19 01:28:23.033  INFO 12192 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 01:28:23.035  INFO 12192 --- [Thread-7] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-19 01:28:23.035 DEBUG 12192 --- [Thread-7] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 01:28:23.077 DEBUG 12192 --- [Thread-7] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 01:28:23.083  INFO 12192 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-05-19 01:28:23.091  INFO 12192 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-05-19 01:28:23.236  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Starting BackEndApplication using Java 11.0.12 on DESKTOP-UOD0JJR with PID 12192 (C:\Users\angel\Desktop\BIM\Back-end\target\classes started by angel in C:\Users\angel\Desktop\BIM\Back-end)
+2022-05-19 01:28:23.237  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : No active profile set, falling back to default profiles: default
+2022-05-19 01:28:23.726  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-19 01:28:23.750  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+2022-05-19 01:28:23.925  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 90 (http)
+2022-05-19 01:28:23.927  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-19 01:28:23.927  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-05-19 01:28:23.965  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-19 01:28:23.966  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 725 ms
+2022-05-19 01:28:24.058  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-19 01:28:24.068  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-05-19 01:28:24.073  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-05-19 01:28:24.074  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-19 01:28:24.163 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 01:28:24.163 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 01:28:24.171 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table chats (id integer not null auto_increment, create_at date, delete_at date, name varchar(60), update_at date, primary key (id)) engine=InnoDB
+2022-05-19 01:28:24.237 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table users_angel_alberto (id integer not null auto_increment, birthday date not null, create_at datetime not null, delete_at datetime, email varchar(100) not null, first_lastname varchar(30) not null, first_name varchar(30) not null, second_lastname varchar(30) not null, second_name varchar(30), telefono varchar(15) not null, update_at datetime, primary key (id)) engine=InnoDB
+2022-05-19 01:28:24.291  INFO 12192 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'file:/C:/Users/angel/Desktop/BIM/Back-end/target/classes/import.sql'
+2022-05-19 01:28:24.292  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-19 01:28:24.292  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 01:28:24.441  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 01:28:24.625  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-19 01:28:24.630  INFO 12192 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-19 01:28:24.648  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 90 (http) with context path ''
+2022-05-19 01:28:24.655  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Started BackEndApplication in 1.477 seconds (JVM running for 279.162)
+2022-05-19 01:28:24.658  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-19 01:28:33.783  INFO 12192 --- [http-nio-90-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 01:28:33.785  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-19 01:28:33.787  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-19 01:33:09.508  INFO 12192 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 01:33:09.510  INFO 12192 --- [Thread-11] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-19 01:33:09.510 DEBUG 12192 --- [Thread-11] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 01:33:09.531 DEBUG 12192 --- [Thread-11] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 01:33:09.539  INFO 12192 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-05-19 01:33:09.547  INFO 12192 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-05-19 01:33:09.744  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Starting BackEndApplication using Java 11.0.12 on DESKTOP-UOD0JJR with PID 12192 (C:\Users\angel\Desktop\BIM\Back-end\target\classes started by angel in C:\Users\angel\Desktop\BIM\Back-end)
+2022-05-19 01:33:09.748  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : No active profile set, falling back to default profiles: default
+2022-05-19 01:33:10.333  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-19 01:33:10.355  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2022-05-19 01:33:10.490  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 90 (http)
+2022-05-19 01:33:10.491  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-19 01:33:10.492  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-05-19 01:33:10.526  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-19 01:33:10.526  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 769 ms
+2022-05-19 01:33:10.595  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-19 01:33:10.608  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2022-05-19 01:33:10.612  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2022-05-19 01:33:10.613  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-19 01:33:10.714 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 01:33:10.719 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 01:33:10.720 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table chats (id integer not null auto_increment, create_at date, delete_at date, name varchar(60), update_at date, primary key (id)) engine=InnoDB
+2022-05-19 01:33:10.748 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table users_angel_alberto (id integer not null auto_increment, birthday date not null, create_at datetime not null, delete_at datetime, email varchar(100) not null, first_lastname varchar(30) not null, first_name varchar(30) not null, second_lastname varchar(30) not null, second_name varchar(30), telefono varchar(15) not null, update_at datetime, primary key (id)) engine=InnoDB
+2022-05-19 01:33:10.777  INFO 12192 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'file:/C:/Users/angel/Desktop/BIM/Back-end/target/classes/import.sql'
+2022-05-19 01:33:10.778  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-19 01:33:10.783  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 01:33:10.932  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 01:33:11.158  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-19 01:33:11.167  INFO 12192 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-19 01:33:11.185  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 90 (http) with context path ''
+2022-05-19 01:33:11.196  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Started BackEndApplication in 1.537 seconds (JVM running for 565.703)
+2022-05-19 01:33:11.199  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-19 01:33:16.019  INFO 12192 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 01:33:16.021  INFO 12192 --- [Thread-15] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-19 01:33:16.021 DEBUG 12192 --- [Thread-15] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 01:33:16.147 DEBUG 12192 --- [Thread-15] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 01:33:16.169  INFO 12192 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2022-05-19 01:33:16.182  INFO 12192 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2022-05-19 01:33:16.419  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Starting BackEndApplication using Java 11.0.12 on DESKTOP-UOD0JJR with PID 12192 (C:\Users\angel\Desktop\BIM\Back-end\target\classes started by angel in C:\Users\angel\Desktop\BIM\Back-end)
+2022-05-19 01:33:16.419  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : No active profile set, falling back to default profiles: default
+2022-05-19 01:33:17.163  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-19 01:33:17.198  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 2 JPA repository interfaces.
+2022-05-19 01:33:17.424  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 90 (http)
+2022-05-19 01:33:17.427  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-19 01:33:17.427  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-05-19 01:33:17.467  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-19 01:33:17.467  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1043 ms
+2022-05-19 01:33:17.542  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-19 01:33:17.551  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2022-05-19 01:33:17.555  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2022-05-19 01:33:17.555  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-19 01:33:17.645 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 01:33:17.647 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 01:33:17.649 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table chats (id integer not null auto_increment, create_at date, delete_at date, name varchar(60), update_at date, primary key (id)) engine=InnoDB
+2022-05-19 01:33:17.676 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table users_angel_alberto (id integer not null auto_increment, birthday date not null, create_at datetime not null, delete_at datetime, email varchar(100) not null, first_lastname varchar(30) not null, first_name varchar(30) not null, second_lastname varchar(30) not null, second_name varchar(30), telefono varchar(15) not null, update_at datetime, primary key (id)) engine=InnoDB
+2022-05-19 01:33:17.703  INFO 12192 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'file:/C:/Users/angel/Desktop/BIM/Back-end/target/classes/import.sql'
+2022-05-19 01:33:17.704  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-19 01:33:17.705  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 01:33:17.852  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 01:33:18.024  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-19 01:33:18.029  INFO 12192 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-19 01:33:18.041  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 90 (http) with context path ''
+2022-05-19 01:33:18.056  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Started BackEndApplication in 1.747 seconds (JVM running for 572.563)
+2022-05-19 01:33:18.067  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-19 01:35:15.530  INFO 12192 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 01:35:15.531  INFO 12192 --- [Thread-19] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-19 01:35:15.532 DEBUG 12192 --- [Thread-19] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 01:35:15.577 DEBUG 12192 --- [Thread-19] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 01:35:15.592  INFO 12192 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2022-05-19 01:35:15.599  INFO 12192 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2022-05-19 01:35:15.825  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Starting BackEndApplication using Java 11.0.12 on DESKTOP-UOD0JJR with PID 12192 (C:\Users\angel\Desktop\BIM\Back-end\target\classes started by angel in C:\Users\angel\Desktop\BIM\Back-end)
+2022-05-19 01:35:15.854  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : No active profile set, falling back to default profiles: default
+2022-05-19 01:35:16.464  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-19 01:35:16.481  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2022-05-19 01:35:16.596  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 90 (http)
+2022-05-19 01:35:16.598  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-19 01:35:16.598  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-05-19 01:35:16.628  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-19 01:35:16.629  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 769 ms
+2022-05-19 01:35:16.696  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-19 01:35:16.703  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2022-05-19 01:35:16.711  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2022-05-19 01:35:16.712  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-19 01:35:16.783 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 01:35:16.785 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 01:35:16.786 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table chats (id integer not null auto_increment, create_at date, delete_at date, name varchar(60), update_at date, primary key (id)) engine=InnoDB
+2022-05-19 01:35:16.861 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table users_angel_alberto (id integer not null auto_increment, birthday date not null, create_at datetime not null, delete_at datetime, email varchar(100) not null, first_lastname varchar(30) not null, first_name varchar(30) not null, second_lastname varchar(30) not null, second_name varchar(30), telefono varchar(15) not null, update_at datetime, primary key (id)) engine=InnoDB
+2022-05-19 01:35:16.890  INFO 12192 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'file:/C:/Users/angel/Desktop/BIM/Back-end/target/classes/import.sql'
+2022-05-19 01:35:16.891  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-19 01:35:16.891  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 01:35:17.024  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 01:35:17.161  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-19 01:35:17.165  INFO 12192 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-19 01:35:17.175  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 90 (http) with context path ''
+2022-05-19 01:35:17.184  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Started BackEndApplication in 1.468 seconds (JVM running for 691.691)
+2022-05-19 01:35:17.186  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-19 01:35:24.878  INFO 12192 --- [http-nio-90-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 01:35:24.880  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-19 01:35:24.881  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-19 01:35:25.005 DEBUG 12192 --- [http-nio-90-exec-2] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 01:53:27.105  INFO 12192 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 01:53:27.106  INFO 12192 --- [Thread-23] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-19 01:53:27.107 DEBUG 12192 --- [Thread-23] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 01:53:27.151 DEBUG 12192 --- [Thread-23] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 01:53:27.159  INFO 12192 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2022-05-19 01:53:27.168  INFO 12192 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2022-05-19 01:53:27.381  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Starting BackEndApplication using Java 11.0.12 on DESKTOP-UOD0JJR with PID 12192 (C:\Users\angel\Desktop\BIM\Back-end\target\classes started by angel in C:\Users\angel\Desktop\BIM\Back-end)
+2022-05-19 01:53:27.382  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : No active profile set, falling back to default profiles: default
+2022-05-19 01:53:27.920  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-19 01:53:27.943  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2022-05-19 01:53:28.123  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 90 (http)
+2022-05-19 01:53:28.124  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-19 01:53:28.125  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-05-19 01:53:28.165  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-19 01:53:28.166  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 780 ms
+2022-05-19 01:53:28.325  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-19 01:53:28.342  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2022-05-19 01:53:28.347  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2022-05-19 01:53:28.348  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-19 01:53:28.464 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 01:53:28.467 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 01:53:28.468 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table chats (id integer not null auto_increment, create_at date, delete_at date, name varchar(60), update_at date, primary key (id)) engine=InnoDB
+2022-05-19 01:53:28.542 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table users_angel_alberto (id integer not null auto_increment, birthday date not null, create_at datetime not null, delete_at datetime, email varchar(100) not null, first_lastname varchar(30) not null, first_name varchar(30) not null, second_lastname varchar(30) not null, second_name varchar(30), telefono varchar(15) not null, update_at datetime, primary key (id)) engine=InnoDB
+2022-05-19 01:53:28.568  INFO 12192 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'file:/C:/Users/angel/Desktop/BIM/Back-end/target/classes/import.sql'
+2022-05-19 01:53:28.569  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-19 01:53:28.569  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 01:53:28.762  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 01:53:28.973  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-19 01:53:28.979  INFO 12192 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-19 01:53:28.997  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 90 (http) with context path ''
+2022-05-19 01:53:29.008  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Started BackEndApplication in 1.701 seconds (JVM running for 1783.515)
+2022-05-19 01:53:29.011  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-19 01:53:49.865  INFO 12192 --- [http-nio-90-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 01:53:49.865  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-19 01:53:49.867  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-19 01:53:49.876  WARN 12192 --- [http-nio-90-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.Date` from String "1999-10-08": not a valid representation (error: Failed to parse Date value '1999-10-08': Unparseable date: "1999-10-08"); nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.util.Date` from String "1999-10-08": not a valid representation (error: Failed to parse Date value '1999-10-08': Unparseable date: "1999-10-08")
+ at [Source: (PushbackInputStream); line: 6, column: 17] (through reference chain: com.backEnd.springboot.apirest.dto.UserDto["birthday"])]
+2022-05-19 01:59:41.219  INFO 12192 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 01:59:41.220  INFO 12192 --- [Thread-27] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-19 01:59:41.221 DEBUG 12192 --- [Thread-27] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 01:59:41.274 DEBUG 12192 --- [Thread-27] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 01:59:41.293  INFO 12192 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2022-05-19 01:59:41.322  INFO 12192 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2022-05-19 01:59:41.471  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Starting BackEndApplication using Java 11.0.12 on DESKTOP-UOD0JJR with PID 12192 (C:\Users\angel\Desktop\BIM\Back-end\target\classes started by angel in C:\Users\angel\Desktop\BIM\Back-end)
+2022-05-19 01:59:41.472  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : No active profile set, falling back to default profiles: default
+2022-05-19 01:59:42.165  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-19 01:59:42.195  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 2 JPA repository interfaces.
+2022-05-19 01:59:42.360  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 90 (http)
+2022-05-19 01:59:42.362  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-19 01:59:42.362  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-05-19 01:59:42.396  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-19 01:59:42.396  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 921 ms
+2022-05-19 01:59:42.762  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-19 01:59:42.771  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2022-05-19 01:59:42.776  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2022-05-19 01:59:42.777  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-19 01:59:42.847 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 01:59:42.849 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 01:59:42.851 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table chats (id integer not null auto_increment, create_at date, delete_at date, name varchar(60), update_at date, primary key (id)) engine=InnoDB
+2022-05-19 01:59:42.871 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table users_angel_alberto (id integer not null auto_increment, birthday date not null, create_at datetime not null, delete_at datetime, email varchar(100) not null, first_lastname varchar(30) not null, first_name varchar(30) not null, second_lastname varchar(30) not null, second_name varchar(30), telefono varchar(15) not null, update_at datetime, primary key (id)) engine=InnoDB
+2022-05-19 01:59:42.926  INFO 12192 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'file:/C:/Users/angel/Desktop/BIM/Back-end/target/classes/import.sql'
+2022-05-19 01:59:42.927  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-19 01:59:42.929  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 01:59:43.083  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 01:59:43.213  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-19 01:59:43.217  INFO 12192 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-19 01:59:43.231  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 90 (http) with context path ''
+2022-05-19 01:59:43.244  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Started BackEndApplication in 1.813 seconds (JVM running for 2157.751)
+2022-05-19 01:59:43.246  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-19 01:59:59.634  INFO 12192 --- [http-nio-90-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 01:59:59.636  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-19 01:59:59.637  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-19 01:59:59.661 DEBUG 12192 --- [http-nio-90-exec-2] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 02:00:34.791  INFO 12192 --- [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 02:00:34.792  INFO 12192 --- [Thread-31] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-19 02:00:34.792 DEBUG 12192 --- [Thread-31] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 02:00:34.841 DEBUG 12192 --- [Thread-31] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 02:00:34.853  INFO 12192 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2022-05-19 02:00:34.858  INFO 12192 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2022-05-19 02:00:35.169  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Starting BackEndApplication using Java 11.0.12 on DESKTOP-UOD0JJR with PID 12192 (C:\Users\angel\Desktop\BIM\Back-end\target\classes started by angel in C:\Users\angel\Desktop\BIM\Back-end)
+2022-05-19 02:00:35.193  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : No active profile set, falling back to default profiles: default
+2022-05-19 02:00:36.106  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-19 02:00:36.128  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 2 JPA repository interfaces.
+2022-05-19 02:00:36.294  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 90 (http)
+2022-05-19 02:00:36.295  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-19 02:00:36.295  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-05-19 02:00:36.343  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-19 02:00:36.344  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1147 ms
+2022-05-19 02:00:36.495  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-19 02:00:36.564  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2022-05-19 02:00:36.571  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2022-05-19 02:00:36.572  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-19 02:00:36.762 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 02:00:36.767 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 02:00:36.768 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table chats (id integer not null auto_increment, create_at date, delete_at date, name varchar(60), update_at date, primary key (id)) engine=InnoDB
+2022-05-19 02:00:36.818 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table users_angel_alberto (id integer not null auto_increment, birthday date not null, create_at datetime not null, delete_at datetime, email varchar(100) not null, first_lastname varchar(30) not null, first_name varchar(30) not null, second_lastname varchar(30) not null, second_name varchar(30), telefono varchar(15) not null, update_at datetime, primary key (id)) engine=InnoDB
+2022-05-19 02:00:36.840  INFO 12192 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'file:/C:/Users/angel/Desktop/BIM/Back-end/target/classes/import.sql'
+2022-05-19 02:00:36.840  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-19 02:00:36.840  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 02:00:37.056  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 02:00:37.215  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-19 02:00:37.226  INFO 12192 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-19 02:00:37.243  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 90 (http) with context path ''
+2022-05-19 02:00:37.255  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Started BackEndApplication in 2.171 seconds (JVM running for 2211.762)
+2022-05-19 02:00:37.261  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-19 02:00:41.471  INFO 12192 --- [http-nio-90-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 02:00:41.472  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-19 02:00:41.473  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-19 02:00:41.498 DEBUG 12192 --- [http-nio-90-exec-2] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 02:01:01.795  INFO 12192 --- [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 02:01:01.797  INFO 12192 --- [Thread-35] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-19 02:01:01.797 DEBUG 12192 --- [Thread-35] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 02:01:01.846 DEBUG 12192 --- [Thread-35] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 02:01:01.856  INFO 12192 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2022-05-19 02:01:01.862  INFO 12192 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2022-05-19 02:01:02.133  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Starting BackEndApplication using Java 11.0.12 on DESKTOP-UOD0JJR with PID 12192 (C:\Users\angel\Desktop\BIM\Back-end\target\classes started by angel in C:\Users\angel\Desktop\BIM\Back-end)
+2022-05-19 02:01:02.133  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : No active profile set, falling back to default profiles: default
+2022-05-19 02:01:02.787  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-19 02:01:03.027  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 233 ms. Found 2 JPA repository interfaces.
+2022-05-19 02:01:03.159  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 90 (http)
+2022-05-19 02:01:03.160  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-19 02:01:03.161  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-05-19 02:01:03.192  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-19 02:01:03.193  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1053 ms
+2022-05-19 02:01:03.323  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-19 02:01:03.346  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2022-05-19 02:01:03.353  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2022-05-19 02:01:03.354  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-19 02:01:03.492 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 02:01:03.498 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 02:01:03.500 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table chats (id integer not null auto_increment, create_at date, delete_at date, name varchar(60), update_at date, primary key (id)) engine=InnoDB
+2022-05-19 02:01:03.579 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table users_angel_alberto (id integer not null auto_increment, birthday date not null, create_at datetime not null, delete_at datetime, email varchar(100) not null, first_lastname varchar(30) not null, first_name varchar(30) not null, second_lastname varchar(30) not null, second_name varchar(30), telefono varchar(15) not null, update_at datetime, primary key (id)) engine=InnoDB
+2022-05-19 02:01:03.605  INFO 12192 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'file:/C:/Users/angel/Desktop/BIM/Back-end/target/classes/import.sql'
+2022-05-19 02:01:03.605  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-19 02:01:03.605  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 02:01:03.710  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 02:01:03.833  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-19 02:01:03.837  INFO 12192 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-19 02:01:03.846  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 90 (http) with context path ''
+2022-05-19 02:01:03.854  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Started BackEndApplication in 1.781 seconds (JVM running for 2238.361)
+2022-05-19 02:01:03.856  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-19 02:01:07.613  INFO 12192 --- [http-nio-90-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 02:01:07.614  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-19 02:01:07.614  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-05-19 02:01:07.632 DEBUG 12192 --- [http-nio-90-exec-2] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 02:14:25.637  INFO 12192 --- [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 02:14:25.638  INFO 12192 --- [Thread-39] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-19 02:14:25.639 DEBUG 12192 --- [Thread-39] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 02:14:25.687 DEBUG 12192 --- [Thread-39] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 02:14:25.717  INFO 12192 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2022-05-19 02:14:25.737  INFO 12192 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2022-05-19 02:14:25.987  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Starting BackEndApplication using Java 11.0.12 on DESKTOP-UOD0JJR with PID 12192 (C:\Users\angel\Desktop\BIM\Back-end\target\classes started by angel in C:\Users\angel\Desktop\BIM\Back-end)
+2022-05-19 02:14:25.987  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : No active profile set, falling back to default profiles: default
+2022-05-19 02:14:26.533  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-19 02:14:26.552  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 2 JPA repository interfaces.
+2022-05-19 02:14:26.696  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 90 (http)
+2022-05-19 02:14:26.697  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-19 02:14:26.698  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-05-19 02:14:26.726  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-19 02:14:26.726  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 730 ms
+2022-05-19 02:14:26.944  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-19 02:14:26.952  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2022-05-19 02:14:26.971  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2022-05-19 02:14:26.972  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-19 02:14:27.107 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 02:14:27.111 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 02:14:27.113 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table chats (id integer not null auto_increment, create_at date, delete_at date, name varchar(60), update_at date, primary key (id)) engine=InnoDB
+2022-05-19 02:14:27.154 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table users_angel_alberto (id integer not null auto_increment, birthday date not null, create_at datetime not null, delete_at datetime, email varchar(100) not null, first_lastname varchar(30) not null, first_name varchar(30) not null, second_lastname varchar(30) not null, second_name varchar(30), telefono varchar(15) not null, update_at datetime, primary key (id)) engine=InnoDB
+2022-05-19 02:14:27.182  INFO 12192 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'file:/C:/Users/angel/Desktop/BIM/Back-end/target/classes/import.sql'
+2022-05-19 02:14:27.182  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-19 02:14:27.182  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 02:14:27.278  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 02:14:27.391  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-19 02:14:27.394  INFO 12192 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-19 02:14:27.404  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 90 (http) with context path ''
+2022-05-19 02:14:27.411  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Started BackEndApplication in 1.496 seconds (JVM running for 3041.918)
+2022-05-19 02:14:27.413  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-19 02:14:39.323  INFO 12192 --- [http-nio-90-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 02:14:39.323  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-19 02:14:39.325  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-19 02:14:39.441 DEBUG 12192 --- [http-nio-90-exec-2] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 02:15:03.400 DEBUG 12192 --- [http-nio-90-exec-3] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 02:15:35.360  INFO 12192 --- [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 02:15:35.361  INFO 12192 --- [Thread-43] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-19 02:15:35.361 DEBUG 12192 --- [Thread-43] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 02:15:35.378 DEBUG 12192 --- [Thread-43] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 02:15:35.383  INFO 12192 --- [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2022-05-19 02:15:35.392  INFO 12192 --- [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2022-05-19 02:15:35.566  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Starting BackEndApplication using Java 11.0.12 on DESKTOP-UOD0JJR with PID 12192 (C:\Users\angel\Desktop\BIM\Back-end\target\classes started by angel in C:\Users\angel\Desktop\BIM\Back-end)
+2022-05-19 02:15:35.566  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : No active profile set, falling back to default profiles: default
+2022-05-19 02:15:36.113  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-19 02:15:36.130  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+2022-05-19 02:15:36.240  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 90 (http)
+2022-05-19 02:15:36.249  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-19 02:15:36.250  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-05-19 02:15:36.280  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-19 02:15:36.281  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 712 ms
+2022-05-19 02:15:36.349  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-19 02:15:36.357  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2022-05-19 02:15:36.361  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2022-05-19 02:15:36.362  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-19 02:15:36.480 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 02:15:36.523 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 02:15:36.537 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table chats (id integer not null auto_increment, create_at date, delete_at date, name varchar(60), update_at date, primary key (id)) engine=InnoDB
+2022-05-19 02:15:36.577 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table users_angel_alberto (id integer not null auto_increment, birthday date not null, create_at datetime not null, delete_at datetime, email varchar(100) not null, first_lastname varchar(30) not null, first_name varchar(30) not null, second_lastname varchar(30) not null, second_name varchar(30), telefono varchar(15) not null, update_at datetime, primary key (id)) engine=InnoDB
+2022-05-19 02:15:36.598  INFO 12192 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'file:/C:/Users/angel/Desktop/BIM/Back-end/target/classes/import.sql'
+2022-05-19 02:15:36.599  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-19 02:15:36.599  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 02:15:36.710  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 02:15:36.807  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-19 02:15:36.809  INFO 12192 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-19 02:15:36.821  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 90 (http) with context path ''
+2022-05-19 02:15:36.831  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Started BackEndApplication in 1.306 seconds (JVM running for 3111.338)
+2022-05-19 02:15:36.833  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-19 02:20:43.974  INFO 12192 --- [Thread-47] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 02:20:43.975  INFO 12192 --- [Thread-47] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-19 02:20:43.975 DEBUG 12192 --- [Thread-47] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 02:20:43.990 DEBUG 12192 --- [Thread-47] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 02:20:43.996  INFO 12192 --- [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2022-05-19 02:20:44.001  INFO 12192 --- [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2022-05-19 02:20:44.178  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Starting BackEndApplication using Java 11.0.12 on DESKTOP-UOD0JJR with PID 12192 (C:\Users\angel\Desktop\BIM\Back-end\target\classes started by angel in C:\Users\angel\Desktop\BIM\Back-end)
+2022-05-19 02:20:44.179  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : No active profile set, falling back to default profiles: default
+2022-05-19 02:20:44.717  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-19 02:20:44.755  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 2 JPA repository interfaces.
+2022-05-19 02:20:44.911  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 90 (http)
+2022-05-19 02:20:44.912  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-19 02:20:44.912  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-05-19 02:20:44.968  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-19 02:20:44.969  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 788 ms
+2022-05-19 02:20:45.061  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-19 02:20:45.079  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2022-05-19 02:20:45.087  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2022-05-19 02:20:45.087  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-19 02:20:45.304 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 02:20:45.305 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 02:20:45.307 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table chats (id integer not null auto_increment, create_at date, delete_at date, name varchar(60), update_at date, primary key (id)) engine=InnoDB
+2022-05-19 02:20:45.349 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table users_angel_alberto (id integer not null auto_increment, birthday date not null, create_at datetime not null, delete_at datetime, email varchar(100) not null, first_lastname varchar(30) not null, first_name varchar(30) not null, second_lastname varchar(30) not null, second_name varchar(30), telefono varchar(15) not null, update_at datetime, primary key (id)) engine=InnoDB
+2022-05-19 02:20:45.392  INFO 12192 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'file:/C:/Users/angel/Desktop/BIM/Back-end/target/classes/import.sql'
+2022-05-19 02:20:45.393  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-19 02:20:45.394  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 02:20:45.579  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 02:20:45.702  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-19 02:20:45.708  INFO 12192 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-19 02:20:45.723  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 90 (http) with context path ''
+2022-05-19 02:20:45.732  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Started BackEndApplication in 1.592 seconds (JVM running for 3420.239)
+2022-05-19 02:20:45.734  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-19 02:20:50.785  INFO 12192 --- [http-nio-90-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 02:20:50.787  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-19 02:20:50.790  INFO 12192 --- [http-nio-90-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-05-19 02:20:50.813 DEBUG 12192 --- [http-nio-90-exec-2] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 06:10:12.619  WARN 12192 --- [http-nio-90-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-05-19 06:10:32.365  WARN 12192 --- [http-nio-90-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-05-19 06:10:56.270  INFO 12192 --- [Thread-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 06:10:56.278  INFO 12192 --- [Thread-51] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-19 06:10:56.279 DEBUG 12192 --- [Thread-51] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 06:10:56.394 DEBUG 12192 --- [Thread-51] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 06:10:56.409  INFO 12192 --- [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2022-05-19 06:10:56.418  INFO 12192 --- [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2022-05-19 06:10:56.769  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Starting BackEndApplication using Java 11.0.12 on DESKTOP-UOD0JJR with PID 12192 (C:\Users\angel\Desktop\BIM\Back-end\target\classes started by angel in C:\Users\angel\Desktop\BIM\Back-end)
+2022-05-19 06:10:56.769  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : No active profile set, falling back to default profiles: default
+2022-05-19 06:10:57.191  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-19 06:10:57.208  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2022-05-19 06:10:57.365  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 90 (http)
+2022-05-19 06:10:57.366  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-19 06:10:57.366  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-05-19 06:10:57.402  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-19 06:10:57.402  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 628 ms
+2022-05-19 06:10:57.711  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-19 06:10:57.724  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2022-05-19 06:10:57.729  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2022-05-19 06:10:57.730  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-19 06:10:57.795 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 06:10:57.796 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 06:10:57.797 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table chats (id integer not null auto_increment, create_at date, delete_at date, name varchar(60), update_at date, primary key (id)) engine=InnoDB
+2022-05-19 06:10:57.849 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table users_angel_alberto (id integer not null auto_increment, birthday date not null, create_at datetime not null, delete_at datetime, email varchar(100) not null, first_lastname varchar(30) not null, first_name varchar(30) not null, second_lastname varchar(30) not null, second_name varchar(30), telefono varchar(15) not null, update_at datetime, primary key (id)) engine=InnoDB
+2022-05-19 06:10:57.889  INFO 12192 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'file:/C:/Users/angel/Desktop/BIM/Back-end/target/classes/import.sql'
+2022-05-19 06:10:57.889  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-19 06:10:57.890  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 06:10:58.144  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 06:10:58.379  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-19 06:10:58.385  INFO 12192 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-19 06:10:58.402  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 90 (http) with context path ''
+2022-05-19 06:10:58.410  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Started BackEndApplication in 1.707 seconds (JVM running for 17232.918)
+2022-05-19 06:10:58.412  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-19 06:12:15.651  INFO 12192 --- [Thread-55] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 06:12:15.660  INFO 12192 --- [Thread-55] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-19 06:12:15.660 DEBUG 12192 --- [Thread-55] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 06:12:15.689 DEBUG 12192 --- [Thread-55] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 06:12:15.695  INFO 12192 --- [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2022-05-19 06:12:15.701  INFO 12192 --- [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2022-05-19 06:12:15.838  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Starting BackEndApplication using Java 11.0.12 on DESKTOP-UOD0JJR with PID 12192 (C:\Users\angel\Desktop\BIM\Back-end\target\classes started by angel in C:\Users\angel\Desktop\BIM\Back-end)
+2022-05-19 06:12:15.838  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : No active profile set, falling back to default profiles: default
+2022-05-19 06:12:16.441  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-19 06:12:16.464  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 2 JPA repository interfaces.
+2022-05-19 06:12:16.577  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 90 (http)
+2022-05-19 06:12:16.578  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-19 06:12:16.578  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-05-19 06:12:16.609  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-19 06:12:16.609  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 768 ms
+2022-05-19 06:12:16.669  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-19 06:12:16.677  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2022-05-19 06:12:16.682  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2022-05-19 06:12:16.683  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-19 06:12:16.746 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 06:12:16.747 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 06:12:16.748 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table chats (id integer not null auto_increment, create_at date, delete_at date, name varchar(60), update_at date, primary key (id)) engine=InnoDB
+2022-05-19 06:12:16.789 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table users_angel_alberto (id integer not null auto_increment, birthday date not null, create_at datetime not null, delete_at datetime, email varchar(100) not null, first_lastname varchar(30) not null, first_name varchar(30) not null, second_lastname varchar(30) not null, second_name varchar(30), telefono varchar(15) not null, update_at datetime, primary key (id)) engine=InnoDB
+2022-05-19 06:12:16.817  INFO 12192 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'file:/C:/Users/angel/Desktop/BIM/Back-end/target/classes/import.sql'
+2022-05-19 06:12:16.818  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-19 06:12:16.818  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 06:12:16.942  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 06:12:17.080  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-19 06:12:17.082  INFO 12192 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-19 06:12:17.097  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 90 (http) with context path ''
+2022-05-19 06:12:17.105  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Started BackEndApplication in 1.306 seconds (JVM running for 17311.612)
+2022-05-19 06:12:17.106  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-19 06:30:47.036  INFO 12192 --- [http-nio-90-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 06:30:47.037  INFO 12192 --- [http-nio-90-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-19 06:30:47.038  INFO 12192 --- [http-nio-90-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-19 06:30:47.068 DEBUG 12192 --- [http-nio-90-exec-1] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 06:33:18.151 DEBUG 12192 --- [http-nio-90-exec-4] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 07:34:40.749 DEBUG 12192 --- [http-nio-90-exec-7] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 08:04:44.945  WARN 12192 --- [http-nio-90-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-05-19 08:18:15.566 DEBUG 12192 --- [http-nio-90-exec-3] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 08:18:36.995 DEBUG 12192 --- [http-nio-90-exec-4] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 08:18:50.169  WARN 12192 --- [http-nio-90-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser); nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('/' (code 47)): maybe a (non-standard) comment? (not recognized as one since Feature 'ALLOW_COMMENTS' not enabled for parser)
+ at [Source: (PushbackInputStream); line: 3, column: 6]]
+2022-05-19 08:19:01.362 DEBUG 12192 --- [http-nio-90-exec-6] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 08:19:33.286 DEBUG 12192 --- [http-nio-90-exec-8] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 08:25:15.833 DEBUG 12192 --- [http-nio-90-exec-1] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 08:26:06.661 DEBUG 12192 --- [http-nio-90-exec-3] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 08:26:17.922 DEBUG 12192 --- [http-nio-90-exec-5] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 08:26:46.450 DEBUG 12192 --- [http-nio-90-exec-7] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 08:33:16.263 DEBUG 12192 --- [http-nio-90-exec-10] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 08:36:30.663 DEBUG 12192 --- [http-nio-90-exec-3] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 08:47:04.514 DEBUG 12192 --- [http-nio-90-exec-6] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 08:54:00.987 DEBUG 12192 --- [http-nio-90-exec-9] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 08:57:46.395 DEBUG 12192 --- [http-nio-90-exec-2] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 09:04:12.683 DEBUG 12192 --- [http-nio-90-exec-5] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 09:14:47.977 DEBUG 12192 --- [http-nio-90-exec-7] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 09:19:49.650 DEBUG 12192 --- [http-nio-90-exec-10] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 09:20:25.422 DEBUG 12192 --- [http-nio-90-exec-2] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 09:22:36.685 DEBUG 12192 --- [http-nio-90-exec-5] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 10:48:09.199  WARN 12192 --- [HikariPool-15 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Thread starvation or clock leap detected (housekeeper delta=58m48s492ms712µs99ns).
+2022-05-19 10:55:55.370 DEBUG 12192 --- [http-nio-90-exec-8] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 11:01:29.172 DEBUG 12192 --- [http-nio-90-exec-1] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 11:20:16.468  WARN 12192 --- [HikariPool-15 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Thread starvation or clock leap detected (housekeeper delta=10m36s906ms764µs500ns).
+2022-05-19 11:27:45.756 DEBUG 12192 --- [http-nio-90-exec-4] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 12:23:53.999  WARN 12192 --- [HikariPool-15 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Thread starvation or clock leap detected (housekeeper delta=56m7s430ms911µs100ns).
+2022-05-19 12:45:11.063 DEBUG 12192 --- [http-nio-90-exec-6] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 13:26:18.300  WARN 12192 --- [HikariPool-15 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Thread starvation or clock leap detected (housekeeper delta=2m23s306ms106µs100ns).
+2022-05-19 16:09:03.141 DEBUG 12192 --- [http-nio-90-exec-9] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 17:47:47.615  WARN 12192 --- [HikariPool-15 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Thread starvation or clock leap detected (housekeeper delta=33m21s929ms250µs700ns).
+2022-05-19 17:57:42.163 DEBUG 12192 --- [http-nio-90-exec-2] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 17:58:49.757 DEBUG 12192 --- [http-nio-90-exec-4] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 18:00:30.737 DEBUG 12192 --- [http-nio-90-exec-8] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 18:03:38.331 DEBUG 12192 --- [http-nio-90-exec-10] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 18:06:04.841 DEBUG 12192 --- [http-nio-90-exec-3] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 18:09:13.210 DEBUG 12192 --- [http-nio-90-exec-6] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2022-05-19 18:11:51.732  INFO 12192 --- [Thread-59] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 18:11:51.734  INFO 12192 --- [Thread-59] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-05-19 18:11:51.735 DEBUG 12192 --- [Thread-59] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 18:11:51.789 DEBUG 12192 --- [Thread-59] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 18:11:51.804  INFO 12192 --- [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2022-05-19 18:11:51.810  INFO 12192 --- [Thread-59] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2022-05-19 18:11:52.063  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Starting BackEndApplication using Java 11.0.12 on DESKTOP-UOD0JJR with PID 12192 (C:\Users\angel\Desktop\BIM\Back-end\target\classes started by angel in C:\Users\angel\Desktop\BIM\Back-end)
+2022-05-19 18:11:52.063  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : No active profile set, falling back to default profiles: default
+2022-05-19 18:11:52.472  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-19 18:11:52.492  INFO 12192 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 2 JPA repository interfaces.
+2022-05-19 18:11:52.639  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 90 (http)
+2022-05-19 18:11:52.639  INFO 12192 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-19 18:11:52.640  INFO 12192 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2022-05-19 18:11:52.666  INFO 12192 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-19 18:11:52.666  INFO 12192 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 599 ms
+2022-05-19 18:11:52.730  INFO 12192 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-19 18:11:52.752  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2022-05-19 18:11:54.154  INFO 12192 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2022-05-19 18:11:54.157  INFO 12192 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-19 18:11:54.233 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists chats
+2022-05-19 18:11:54.509 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : drop table if exists users_angel_alberto
+2022-05-19 18:11:54.783 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table chats (id integer not null auto_increment, create_at date, delete_at date, name varchar(60), update_at date, primary key (id)) engine=InnoDB
+2022-05-19 18:11:55.103 DEBUG 12192 --- [restartedMain] org.hibernate.SQL                        : create table users_angel_alberto (id integer not null auto_increment, birthday date not null, create_at datetime not null, delete_at datetime, email varchar(100) not null, first_lastname varchar(30) not null, first_name varchar(30) not null, second_lastname varchar(30) not null, second_name varchar(30), telefono varchar(15) not null, update_at datetime, primary key (id)) engine=InnoDB
+2022-05-19 18:11:55.408  INFO 12192 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'file:/C:/Users/angel/Desktop/BIM/Back-end/target/classes/import.sql'
+2022-05-19 18:11:55.409  INFO 12192 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-19 18:11:55.411  INFO 12192 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-19 18:11:55.558  WARN 12192 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-19 18:11:55.671  INFO 12192 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-19 18:11:55.675  INFO 12192 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-19 18:11:55.685  INFO 12192 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 90 (http) with context path ''
+2022-05-19 18:11:55.690  INFO 12192 --- [restartedMain] c.b.s.apirest.BackEndApplication         : Started BackEndApplication in 3.667 seconds (JVM running for 60490.226)
+2022-05-19 18:11:55.692  INFO 12192 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-05-19 18:15:15.738  INFO 12192 --- [http-nio-90-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-19 18:15:15.739  INFO 12192 --- [http-nio-90-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-19 18:15:15.741  INFO 12192 --- [http-nio-90-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-19 18:15:16.139 DEBUG 12192 --- [http-nio-90-exec-2] org.hibernate.SQL                        : insert into users_angel_alberto (birthday, create_at, delete_at, email, first_lastname, first_name, second_lastname, second_name, telefono, update_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
